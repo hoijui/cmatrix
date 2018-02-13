@@ -277,10 +277,10 @@ void resize_screen(void) {
     LINES = win.ws_row;
 #endif
 
-    if(LINES <10){
+    if (LINES < 10) {
         LINES = 10;
     }
-    if(COLS <10){
+    if (COLS < 10) {
         COLS = 10;
     }
 
