@@ -78,7 +78,7 @@ int lock = 0;
 cmatrix **matrix = (cmatrix **) NULL;
 int *length = NULL;  /* Length of cols in each line */
 int *spaces = NULL;  /* Spaces left to fill */
-int *updates = NULL; /* What does this do again? */
+int *updates = NULL; /* One entry per column. each entry is either 1, 2 or 3. Somehow relates to update TODO Describe more/better */
 #ifndef _WIN32
 volatile sig_atomic_t signal_status = 0; /* Indicates a caught signal */
 #endif
