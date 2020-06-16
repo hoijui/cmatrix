@@ -226,7 +226,7 @@ void var_init() {
         matrix[1][j].val = ' ';
 
         /* And set updates[] array for update speed. */
-        updates[j] = (int) rand() % 3 + 1;
+        updates[j] = ((int) rand() % (UPDATES_RESOLUTION - 1)) + 1;
     }
 
 }
@@ -533,7 +533,7 @@ if (console) {
 #endif
 
         count++;
-        if (count > 4) {
+        if (count > UPDATES_RESOLUTION) {
             count = 1;
         }
 

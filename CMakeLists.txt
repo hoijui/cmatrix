@@ -26,6 +26,7 @@ add_definitions(-DVERSION="${VERSION}")
 if	(NOT WIN32)
 	add_definitions(-DUSE_TIOCSTI)
 endif	()
+add_definitions(-DUPDATES_RESOLUTION=4)
 
 include(CheckIncludeFiles)
 check_include_files("sys/ioctl.h" HAVE_SYS_IOCTL_H)
